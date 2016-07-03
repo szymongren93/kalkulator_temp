@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="389.0" prefWidth="406.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="java2.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="157.0" layoutY="254.0" onAction="#handleButtonAction" text="Przelicz" />
+        <Label fx:id="label" layoutX="151.0" layoutY="292.0" minHeight="16" minWidth="69" />
+      <TitledPane animated="false" prefHeight="25.0" prefWidth="406.0" text="Przeliczacz">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+         <effect>
+            <Glow />
+         </effect>
+      </TitledPane>
+      <RadioButton fx:id="celz" layoutX="50.0" layoutY="124.0" mnemonicParsing="false" selected="true" text="celsiusz">
+         <toggleGroup>
+            <ToggleGroup fx:id="z" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="fahz" layoutX="49.0" layoutY="164.0" mnemonicParsing="false" text="fahrenheit" toggleGroup="$z" />
+      <RadioButton fx:id="kelz" layoutX="49.0" layoutY="201.0" mnemonicParsing="false" text="kelwin" toggleGroup="$z" />
+      <RadioButton fx:id="celna" layoutX="241.0" layoutY="124.0" mnemonicParsing="false" selected="true" text="celsiusz">
+         <toggleGroup>
+            <ToggleGroup fx:id="na" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="fahna" layoutX="241.0" layoutY="164.0" mnemonicParsing="false" text="fahrenheit" toggleGroup="$na" />
+      <RadioButton fx:id="kelna" layoutX="241.0" layoutY="201.0" mnemonicParsing="false" text="kelwin" toggleGroup="$na" />
+      <TextField layoutX="150.0" layoutY="40.0" fx:id="x" />
+      <Label layoutX="93.0" layoutY="44.0" text="Wartość" />
+      <Label layoutX="50.0" layoutY="84.0" text="Przelicz z:" />
+      <Label layoutX="241.0" layoutY="84.0" text="Przelicz na:" />
+    </children>
+</AnchorPane>
